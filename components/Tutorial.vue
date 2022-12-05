@@ -57,7 +57,7 @@ export default {
 
 
            event.preventDefault();
-        const result = await this.$axios.$get(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q=${this.text}&key=AIzaSyAkr0nTbprhqbE15xjm0bcEcwb59sDx_7E`)
+        const result = await this.$axios.$get(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q=${this.text}&key=KEY`)
 
         this.videos = result.items
 
